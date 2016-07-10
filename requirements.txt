@@ -1,0 +1,5 @@
+numpy
+pandas
+matplotlib
+git://github.com/Theano/Theano.git#egg=Theano
+git://github.com/Lasagne/Lasagne.git#egg=Lasagne
