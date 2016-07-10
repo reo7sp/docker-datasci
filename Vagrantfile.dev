@@ -5,6 +5,7 @@ Vagrant.configure('2') do |config|
   config.vm.synced_folder '.', '/vagrant'
 
   config.vm.provision 'docker' do |d|
+    d.build_image '/vagrant', args: '-t "reo7sp/docker-datasci"'
     d.run 'reo7sp/docker-datasci', args: '-d -v /vagrant/notebooks:/home/jovyan/work'
   end
 end
